@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--bootstrap links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--font style--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Hind+Siliguri&family=Noto+Serif+Telugu:wght@200&family=PT+Serif:ital@1&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+<!--font awesome-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <link rel="stylesheet" href="indexstyle.css">
+ <!--Aos animation-->
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+  <body>
+   <div class="all-content" >
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo"><img src="./images/logoimage.png" width="60px" height="50px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+              <div class="dropdown-center" class="nav-link">
+                <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:20px;font-weight:bold;">
+                 Menu
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./breadrools.html">Breadrolls</a></li>
+                  <li><a class="dropdown-item" href="./pancakes.html">pan cakes</a></li>
+                  <li><a class="dropdown-item" href="#">sponge cakes</a></li>
+                  <li><a class="dropdown-item" href="#">Pasteries</a></li>
+                  <li><a class="dropdown-item" href="#">Theme cakes</a></li>
+                </ul>
+              </div>
+          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link"  href="formpopup.html" style="font-size:20px;font-weight:bold;"><button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">Login</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg></a>
+              </li>
+              <li  class="d-md-flex justify-content-md-evenly px-5 my-3">
+                <div class="px-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                   <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+               </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   </div>
+   <!--navbar end -->
+   <!--banner section-->
+   <section id="banner" >
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/bbbbb2.jpg" class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/bbbbbbbb3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/bakerybanner.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/bakerybanner3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+   <section id="about">
+    <div class="container">
+        <div class="heading"  data-aos="fade-up" data-aos-duration="1000">About<span>Us</span><hr></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="./images/aboutus.jpg" alt="" width="635px" height="400px"   data-aos="fade-right" data-aos-duration="1000">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3  data-aos="fade-up" data-aos-duration="500" style="font-size: 40px;font-family: 'Times New Roman', Times, serif;">What Makes our bakkins Special</h3>
+                <p data-aos="fade-up" data-aos-duration="500" style="line-height: 50px;word-spacing: 5px;text-indent: 50px;">..........trying to crave it's way to became a trusted destination for delightful items of all bakery items,also help for home-bakers of all levels to learn,be inspired,share their enthusiasm for booking and allow their lovers to get their desired cakes hassle-free.Home to the best recipes,content,tips and tools and ofcourse a platform.</p>
+ 
+            </div>
+        </div>
+    </div>
+   </section>
+   <!--top card starts-->
+   <section id="top-cards" >
+    <div class="heading2 " data-aos="fade-up" data-aos-duration="1000">Top<span>Categories</span><hr></div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+          <div class="card">
+            <img src="./categoriesimages/Project images/chocalates main.jpg" alt="">
+            <h3 class="fst-italic fst-bold text-center mt-3">Pasteries</h3>        
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+          <div class="card">
+            <img src="./categoriesimages/Project images/cupcakes main.jpg" alt="">
+          <h3 class="fst-italic fst-bold text-center mt-3">Cup Cakes</h3>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+          <div class="card">
+         <a href="./breadrools.html" ><img src="./categoriesimages/Project images/cakes main.jpg" alt=""> </a>
+         <h3 class="fst-italic fst-bold text-center mt-3">Sponge Cakes</h3>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+          <div class="card">
+            <a href="./pancakes.html"><img src="./categoriesimages/Project images/pancakes main images.jpg" alt=""></a> 
+            <h3 class="fst-italic fst-bold text-center mt-3">Pan Cakes</h3>      
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 mx-5 px-5 ">
+      <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+        <div class="card">
+          <img src="./cupcakes/cupcakes/cupcake12.jpg" alt="">
+          <h3 class="fst-italic fst-bold text-center mt-3">Theme Cakes</h3>        
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+        <div class="card ">
+          <img src="./categoriesimages/Project images/pastry main.jpg" alt="">
+        <h3 class="fst-italic fst-bold text-center mt-3">Chocolate pastries</h3>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+        <div class="card">
+          <img src="./categoriesimages/Project images/cookies.jpg" alt="">
+       <h3 class="fst-italic fst-bold text-center mt-3">Cookies</h3>
+        </div>
+      </div>
+      <div class="col-md-3" data-aos="flip-left" data-aos-duration="1000">
+        <div class="card">
+          <img src="./categoriesimages/Project images/donots.jpg" alt="">
+          <h3 class="fst-italic fst-bold text-center mt-3">Donots</h3>      
+        </div>
+      </div>
+    </div>
+  </div>
+   </section>
+   <!--contact us-->
+   <section id="contact" style="margin-top:100px; width:100%;" class="mb-5">
+    <h3 class="text-center"  data-aos="fade-up" data-aos-duration="1000">Contact <span style="color:#60422e;">Us</span><hr></h3>
+    <div class="row">
+      <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1000">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15432.857894253324!2d78.53201005!3d14.7569434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1696443324478!5m2!1sen!2sin" style="margin-left:70px;" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1000">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputcomment" class="form-label">Message</label>
+            <textarea class="form-control" id="inputcomment" placeholder="Message"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+      </div>
+    </div>
+   </section>
+   <section class="thankyou">
+    <div class="text-center">
+      <p ><h5>Designed by</h5><span style="color:#60422e;font-size:20px;"><i>Ramya,Nagendhra,karimunisa,Vandhana</i></span></p>
+    </div>
+   </section>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+  </body>
+</html>
